@@ -1,0 +1,12 @@
+9/3/2018, Jackie P.
+
+- Rearchitecting the master file from the ground up.
+- Added log to track version control and software and framework versions.
+- Added UTF-8, meta description, keywords, author and viewport tags.
+- Added the bootstrap 4.1.3 CDN. For production, include bootstrap through npm and bundle in a build step.
+- Added popper 1.14.3 CDN for bootstrap's dropdowns etc.
+- Added jquery 3.3.1 CDN.
+- Created blank style.css file inside the css folder.
+- Created blank main.js file inside the js folder.
+- Added favicon link.
+
