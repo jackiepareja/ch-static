@@ -1,0 +1,53 @@
+/*=============================================================
+    General Styling
+    background-color: #8DC63F; Green
+    background-color: #E30303; Red
+===============================================================*/
+* {
+    font-family: Arial;
+}
+
+/*=============================================================
+    Navigation
+===============================================================*/
+/* -- Top Navigation -- */
+nav#top-navigation.navbar.navbar-expand-lg > div#navbarNav.collapse.navbar-collapse > ul.navbar-nav.ml-auto {
+    border-bottom: 5px solid #8DC63F;
+}
+nav#top-navigation.navbar.navbar-expand-lg > div#navbarNav.collapse.navbar-collapse > ul.navbar-nav > li.nav-item > a.nav-link{
+    color: #000;
+    font-size: 1.2vw;
+    padding-left: 3em;
+}
+nav#top-navigation.navbar.navbar-expand-lg > div#navbarNav.collapse.navbar-collapse > ul.navbar-nav > li.nav-item.active > a.nav-link {
+    color: #096D67;
+}
+
+/* -- Main Menu -- */
+section#main-menu > div.row.container-fluid > div.ch-logo-menu.col-lg-3.col-md-6.col-sm-12 > img {
+    width: 90%;
+}
+section#main-menu > div.row.container-fluid > div.banners-menu.col-lg-3.col-md-6.col-sm-12 {
+    padding-top: 2em;
+}
+section#main-menu > div.row.container-fluid > div.banners-menu.col-lg-3.col-md-6.col-sm-12 > div#carouselBannerMenuIndicators.carousel.slide > ol.carousel-indicators > li {
+    background-color: #EDAE49;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+}
+section#main-menu > div.row.container-fluid > div.banners-menu.col-lg-3.col-md-6.col-sm-12 > div#carouselBannerMenuIndicators.carousel.slide > ol.carousel-indicators {
+    position: absolute;
+    top: 3.5em;
+}
+
+/* -- Lower Navigation -- */
+nav#lower-navigation.navbar.navbar-expand-lg > div#navbarNav.collapse.navbar-collapse {
+    background-color: #E30303;
+}
+nav#lower-navigation.navbar.navbar-expand-lg > div#navbarNav.collapse.navbar-collapse > ul.navbar-nav {
+    margin: auto;
+}
+nav#lower-navigation.navbar.navbar-expand-lg > div#navbarNav.collapse.navbar-collapse > ul.navbar-nav > li.nav-item > a.nav-link {
+    color: #FFF;
+}
