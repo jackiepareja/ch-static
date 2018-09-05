@@ -1,0 +1,66 @@
+/*=============================================================
+    Footer
+===============================================================*/
+footer {
+    background-color: #096D67;
+    color: #fff;
+}
+footer#footer > div.footer {
+    padding: 2em 0 0 0;
+}
+/* -- Footer Left Information -- */
+footer#footer >div.footer > div.left-footer-info {
+    text-align: center;
+    padding-left: 10em;
+}
+footer#footer > div.footer > div.left-footer-info > p.contact-number,
+footer#footer > div.footer > div.left-footer-info > div.navlinks-1 > ul.footer-navlinks-1 > li > a,
+footer#footer > div.footer > div.left-footer-info > div.navlinks-2 > ul.footer-navlinks-2 > li > a,
+footer#footer > div.footer > div.left-footer-info > p.copyright{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+footer#footer > div.footer > div.left-footer-info > p.contact-number > a {
+    color: #fff;
+}
+footer#footer > div > div.left-footer-info > div.navlinks-3 > ul.footer-navlinks-3 > li > a > img {
+    width: 70%;
+}
+footer#footer > div.footer > div.left-footer-info > p.copyright {
+    margin-top: 3em;
+}
+/* -- Footer Right Information -- */
+footer#footer > div.footer > div.right-footer-info > ul.footer-social-links {
+    list-style: none;
+    text-align: center;
+}
+footer#footer > div.footer > div.right-footer-info > ul.footer-social-links > li {
+    padding: 0 0 1em 0;
+    margin: 0;
+}
+footer#footer > div.footer > div.right-footer-info > ul.footer-social-links > li >i.fab.fa-pinterest,
+footer#footer > div.footer > div.right-footer-info > ul.footer-social-links > li >i.fab.fa-google-plus {
+    font-size: 20px;
+}
+footer#footer > div.footer > div.right-footer-info > ul.footer-social-links > li > i.fab.fa-twitter {
+    color: #096d67;
+    background-color: #FFF;
+    border-radius: 100%;
+    padding: 4px;
+    font-size: 12px;
+}
+footer#footer > div.footer > div.right-footer-info > ul.footer-social-links > li > i.fab.fa-facebook-f {
+    color: #096d67;
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 4px 7px;
+    font-size: 12px;
+}
+footer#footer > div.footer > div.right-footer-info > ul.footer-social-links > li > i.fab.fa-instagram {
+    color: #096d67;
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 3px 4px;
+    font-size: 15px;
+} 

@@ -1,3 +1,8 @@
+9/4/2018, Jackie P.
+- Added all of the available HTML pages and added links to navlinks.
+- Finished the generic menu navigation and footers for all pages.
+- Added fontawesome CDN, but will need to be replaced with downloadable local files when in production.
+
 9/3/2018, Jackie P.
 
 - Rearchitecting the master file from the ground up.

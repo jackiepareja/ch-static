@@ -1,0 +1,105 @@
+/*=============================================================
+    HERO: HOME
+===============================================================*/
+section#hero > div.hero-home {
+    margin: 0 auto 3em auto;
+}
+section#hero > div.hero-home > div#carouselHeroHomeIndicators > ol {
+    position: relative;
+    top: 30em;
+}
+section#hero > div.hero-home > div#carouselHeroHomeIndicators > ol > li {
+    background-color: #FFF;
+    border: .5px solid #EDAE49;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+}
+section#hero > div.hero-home > div#carouselHeroHomeIndicators > ol > li.active {
+    background-color: #EDAE49;
+    border: .5px solid #EDAE49;
+}
+/* -- CONTINENT LINKS -- */
+/* -- All Continents -- */
+div#continents-links {
+    background-color: #096D67;
+    width: 25%;
+    height: 71%;
+    position: absolute;
+    top: 15.7em;
+    left: 3em;
+    opacity: .8;
+}
+div.europe,
+div.asia,
+div.america,
+div.other {
+    cursor: pointer;
+}
+h5.continent-header {
+    color: #FFF;
+    font-weight: 800;
+    padding: 5px 10px;
+}
+div.continent-border {
+    height: 1px;
+    background-color: #fff;
+    width: 97.3%;
+}
+#continents-links > div > table > tbody > tr > td > a{
+    color: #fff;
+}
+#continents-links > div > table > tbody > tr > td.table-left > a{
+    padding-left: 10px;
+}
+#continents-links > div > table > tbody > tr > td.table-right > a{
+    padding-left: 2em;
+}
+
+
+/* -- All Continents Inverse-colors -- */
+h5.continent-header-inverse {
+    font-weight: 800;
+    padding: 5px 10px;
+}
+div.continent-border-inverse {
+    height: 1px;
+    width: 97.3%;
+    background-color: #000;
+}
+/* -- Europe -- */
+div.continent-border.europe-border{
+    position: absolute;
+    top: 1.7em;
+    left: .5em;
+}
+div.continent-border-inverse.europe-border-inverse {
+    position: absolute;
+    top: 1.7em;
+    left: .5em;
+}
+div#europe-toggle {
+    background-color: #FFF;
+    width: 47vw;
+    position: absolute;
+    left: 22.8em;
+    top: 15.68em;
+}
+/* -- Asia -- */
+div.continent-border.asia-border {
+    position: absolute;
+    top: 9em;
+    left: .5em;
+}
+/* -- America -- */
+div.continent-border.america-border {
+    position: absolute;
+    left: .5em;
+    top: 16.5em;
+}
+/* -- Other -- */
+div.continent-border.other-border {
+    position: absolute;
+    left: .5em;
+    top: 23.8em;
+}
