@@ -10,6 +10,8 @@
     <title>Charming Holidays | Home</title>
     <!-- BootstrapCDN CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-9ralMzdK1QYsk4yBY680hmsb4/hJ98xK3w0TIaJ3ll4POWpWUYaA2bRjGGujGT8w" crossorigin="anonymous">
     <!-- CORE CSS -->
     <link rel="stylesheet" href="ch-assets/css/style.css">
     <!-- favicon -->
@@ -19,11 +21,11 @@
 <body>
     <!-- NAVIGATION BAR -->
     <!-- top navigation bar -->
-    <nav id="top-navigation" class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav id="top-navigation" class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="topNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
@@ -47,9 +49,11 @@
     <!-- middle menu -->
     <section id="main-menu">
         <div class="row container-fluid">
+            <!-- CH Logo -->
             <div class="ch-logo-menu col-lg-3 col-md-6 col-sm-12">
                 <img src="ch-assets/img/ch-logo.png" alt="">
             </div>
+            <!-- Banner Carousel -->
             <div class="banners-menu col-lg-3 col-md-6 col-sm-12">
                 <div id="carouselBannerMenuIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -70,32 +74,41 @@
                     </div>
                 </div>
             </div>
-            <div class="search col-lg-3 col-md-6 col-sm-12"></div>
-            <div class="translator col-lg-3 col-md-6 col-sm-12"></div>
+            <!-- Search Input -->
+            <div class="search col-lg-3 col-md-6 col-sm-12">
+                <input id="searchTours" type="text" placeholder="Tour Search" />
+                <button><img src="ch-assets/img/icons/search.svg" alt=""></button>
+                <p class="search-links"><a href="#">Text</a> | <a href="#">Text</a> | <a href="#">Text</a></p>
+            </div>
+            <!-- Translator -->
+            <div class="translator col-lg-3 col-md-6 col-sm-12">
+                <p class="language-links"><a href="#">English</a> | <a href="#">Chinese</a></p>
+            </div>
         </div>
     </section>
 
     <!-- lower navigation bar -->
-    <nav id="lower-navigation" class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav id="lower-navigation" class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bottomNav" aria-controls="bottomNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="bottomNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Destinations<span class="sr-only">(current)</span></a>
+                    <a class="nav-link destinations" href="#">Destinations<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> | Tour Packages</a>
+                    <a class="nav-link" href="#">Tour Packages</a>
+                    <span class="divider-bar"></span>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">| FAQ'S</a>
+                    <a class="nav-link" href="#">FAQ'S</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">| How to Book</a>
+                    <a class="nav-link" href="#">How to Book</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">| Terms &amp; Conditions</a>
+                    <a class="nav-link" href="#">Terms &amp; Conditions</a>
                 </li>
             </ul>
         </div>
@@ -112,6 +125,98 @@
     <!-- YELP MAP -->
     <!-- end yelp map -->
     <!-- FOOTER -->
+    <footer id="footer">
+        <div class="row container-fluid footer">
+            <!-- Left side of footer -->
+            <div class="col-lg-11 left-footer-info">
+                <!-- reservations CTA -->
+                <p class="contact-number">FOR RESERVATIONS CONTACT US TODAY <a href="tel:18886078555">1.888.607.8555</a></p>
+                <!-- Footer Nav Links -->
+                <!-- navlinks-1 begins -->
+                <div class="navlinks-1">
+                    <ul class="nav justify-content-center footer-navlinks-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Niche Tours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Value Tours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Custom Tours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Student Travel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About Us</a>
+                        </li>
+                    </ul>
+                </div> <!-- navlinks-1 ends -->
+                <!-- navlinks-2 begins -->
+                <div class="navlinks-2">
+                    <ul class="nav justify-content-center footer-navlinks-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Agents</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ticketing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Travel Guides</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Handbook Guide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Club Rewards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div> <!-- navlinks-2 ends -->
+                <!-- navlinks-3 begins -->
+                <div class="navlinks-3">
+                    <ul class="nav justify-content-center footer-navlinks-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <img src="ch-assets/img/footer-logos/asta.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="ch-assets/img/footer-logos/iata.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="ch-assets/img/footer-logos/arc.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="ch-assets/img/footer-logos/nta.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- navlinks-3 ends -->
+                <p class="copyright">Copyright 2018 Charming Holidays Destinations. All Rights Reserved.</p>
+            </div> <!-- left side footer ends -->
+            <!-- Right side of footer -->
+            <div class="col-lg-1 right-footer-info">
+                <ul class="footer-social-links">
+                    <li><i class="fab fa-pinterest"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-google-plus"></i></li>
+                </ul>
+            </div> <!-- right side footer ends -->
+        </div> <!-- row container-fluid ends -->
+    </footer>
     <!-- end footer -->
     <!-- jQueryCDN-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
