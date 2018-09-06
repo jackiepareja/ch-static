@@ -67,6 +67,30 @@ div.continent-border-inverse {
     width: 97.3%;
     background-color: #000;
 }
+div#europe-toggle,
+div#asia-toggle,
+div#america-toggle,
+div#other-toggle {
+    background-color: #FFF;
+    width: 47vw;
+    position: absolute;
+    left: 19.8em;
+    top: 0;
+}
+div.europe-inverse-content > div > ul,
+div.asia-inverse-content > div > ul,
+div.america-inverse-content > div > ul,
+div.other-inverse-content > div > ul {
+    padding: 5px 0 0 1em;
+}
+div.europe-inverse-content > div > ul > li,
+div.asia-inverse-content > div > ul > li,
+div.america-inverse-content > div > ul > li,
+div.other-inverse-content > div > ul > li {
+    list-style: none;
+    font-size: .9em;
+    padding: 0 0 .3em 0;
+}
 /* -- Europe -- */
 div.continent-border.europe-border{
     position: absolute;
@@ -78,28 +102,147 @@ div.continent-border-inverse.europe-border-inverse {
     top: 1.7em;
     left: .5em;
 }
-div#europe-toggle {
-    background-color: #FFF;
-    width: 47vw;
-    position: absolute;
-    left: 22.8em;
-    top: 15.68em;
+
+div.europe-inverse-content > div {
+    padding: 0;
 }
+div.europe-inverse-content > div > img {
+    width: 90%;
+    position: relative;
+    top: 10.6em;
+}
+/* -- display on hover -- */
+div#europe-toggle {
+    display: none;
+}
+div.europe:hover {
+    background-color: #FFF;
+}
+div.europe:hover + div#continents-links{
+    opacity: 1;
+}
+div.europe:hover + div#europe-toggle {
+    display: block;
+}
+div.europe:hover h5.europe-header {
+    opacity: 1;
+    color: #000;
+}
+div.europe:hover div.europe-border {
+    background-color: #000;
+}
+div.europe:hover a.europe-links {
+    color: #000 !important;
+}
+
+
+
+
 /* -- Asia -- */
 div.continent-border.asia-border {
     position: absolute;
     top: 9em;
     left: .5em;
 }
+div.continent-border-inverse.asia-border-inverse {
+    position: absolute;
+    top: 1.7em;
+    left: .5em;
+}
+/* -- display on hover -- */
+div#asia-toggle {
+    display: none;
+}
+div.asia:hover {
+    background-color: #FFF;
+}
+div.asia:hover + div#continents-links{
+    opacity: 1;
+}
+div.asia:hover + div#asia-toggle {
+    display: block;
+}
+div.asia:hover h5.asia-header {
+    opacity: 1;
+    color: #000;
+}
+div.asia:hover div.asia-border {
+    background-color: #000;
+}
+div.asia:hover a.asia-links {
+    color: #000 !important;
+}
+
+
+
 /* -- America -- */
 div.continent-border.america-border {
     position: absolute;
     left: .5em;
     top: 16.5em;
 }
+div.continent-border-inverse.america-border-inverse {
+    position: absolute;
+    top: 1.7em;
+    left: .5em;
+}
+/* -- display on hover -- */
+div#america-toggle {
+    display: none;
+}
+div.america:hover {
+    background-color: #FFF;
+}
+div.america:hover + div#continents-links{
+    opacity: 1;
+}
+div.america:hover + div#america-toggle {
+    display: block;
+}
+div.america:hover h5.america-header {
+    opacity: 1;
+    color: #000;
+}
+div.america:hover div.america-border {
+    background-color: #000;
+}
+div.america:hover a.america-links {
+    color: #000 !important;
+}
+
+
+
 /* -- Other -- */
 div.continent-border.other-border {
     position: absolute;
     left: .5em;
     top: 23.8em;
+}
+div.continent-border-inverse.other-border-inverse {
+    position: absolute;
+    top: 1.7em;
+    left: .5em;
+}
+/* -- display on hover -- */
+div#other-toggle {
+    display: none;
+}
+div.other:hover {
+    background-color: #FFF;
+}
+div.other:hover + div#continents-links{
+    opacity: 1;
+}
+div.other:hover + div#other-toggle {
+    display: block;
+}
+div.other:hover h5.other-header {
+    opacity: 1;
+    color: #000;
+}
+div.other:hover div.other-border {
+    background-color: #000;
+}
+div.other:hover a.other-links {
+    color: #000 !important;
 }

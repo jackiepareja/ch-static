@@ -95,5 +95,6 @@ nav#lower-navigation > div#bottomNav > ul > li > a {
     color: #FFF;
 }
 nav#lower-navigation > div#bottomNav > ul > li > a.destinations{
-    margin-right: 12em;
+    position: relative;
+    right: 13em;
 }
