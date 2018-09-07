@@ -44,8 +44,6 @@ p.feature-text-3 {
     border: none;
     background-color: #FFF;
 }
-
-/* Style the buttons that are used to open the tab content */
 .all-tabs button {
     float: left;
     border: none;
@@ -60,7 +58,6 @@ button.guaranteed-tab {
     width: 50%;
     height: 3em;
 }
-
 button.hot-tab {
     background-color: #096D67;
     color: #fff;
@@ -68,15 +65,10 @@ button.hot-tab {
     width: 50%;
     height: 3em;
 }
-/* Change background color of buttons on hover */
 .all-tabs button:hover {
 }
-
-/* Create an active/current tablink class */
 .all-tabs button.active {
 }
-
-/* Style the tab content */
 .tabcontents {
     padding: 6px 12px;
     border-top: none;
@@ -87,4 +79,33 @@ button.hot-tab {
 }
 #guaranteed {
     border: 3px solid #8DC63F;
+}
+
+/* --Carousel Guaranteed Departure Dates */
+div#carouselFeaturedTabIndicators > ol {
+    position: relative;
+    top: 50em;
+}
+div#carouselFeaturedTabIndicators.carousel.slide > ol.carousel-indicators > li {
+    background-color: #FFF;
+    border: .5px solid #EDAE49;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+}
+div#carouselFeaturedTabIndicators.carousel.slide > ol.carousel-indicators > li.active {
+    background-color: #EDAE49;
+    border: .5px solid #EDAE49;
+}
+img.guaranteed-img {
+    margin-bottom: 1em;
+}
+div.guaranteed-card-text {
+    margin-bottom: 2.3em;
+}
+h5.guaranteed-header {
+    font-weight: 600;
+}
+td.dates {
+    padding-right: 2em;
 }
