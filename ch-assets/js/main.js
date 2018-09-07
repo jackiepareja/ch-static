@@ -1,3 +1,4 @@
+// Featured Tours Tabs
 function openCity(evt, tabName) {
     // Declare all variables
     var i, tabcontents, tablinks;
@@ -18,3 +19,4 @@ function openCity(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+

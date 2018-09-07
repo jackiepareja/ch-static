@@ -1,23 +1,38 @@
 /*======================================
+  All and General Styles for Index
+======================================*/
+h4.featured-tours-header,
+h4.destinations-header {
+    font-weight: 700;
+    color: #E30303;
+}
+h6.view-all-destinations {
+    text-align: right;
+    color: #096D67;
+}
+h6.view-all-destinations > i.fas.fa-eye {
+    color: #096D67;
+}
+div.featuredTours-border,
+div.destinations-border {
+    height: 3px;
+    background-color: #8DC63F;
+    position: relative;
+    bottom: .8em;
+    width: 100%;
+}
+p.subtext {
+    line-height: 1.4em;
+}
+
+/*======================================
   Featured Tours 
 ======================================*/
 div.featured-tours {
     margin: auto;
 }
+
 /* -- Left -- */
-h4.featured-tours-header {
-    font-weight: 700;
-    color: #E30303;
-}
-div.featuredTours-border {
-    height: 3px;
-    background-color: #8DC63F;
-    position: relative;
-    bottom: .8em;
-}
-p.subtext {
-    line-height: 1.4em;
-}
 img.featured-img{
     width: 100%;
 }
@@ -108,4 +123,94 @@ h5.guaranteed-header {
 }
 td.dates {
     padding-right: 2em;
+}
+
+/*======================================
+  Destinations
+======================================*/
+section#destinations > p.subtext {
+    padding-left: 15px;
+}
+div.destinations-border {
+    left: 1em;
+}
+
+/* -- Masonry Grid -- */
+/* ---- grid ---- */
+
+.grid {
+    max-width: 1200px;
+}
+
+
+/* clearfix */
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ---- grid-item ---- */
+
+.grid-item {
+    width: 20%;
+}
+
+.grid-item {
+    height: 120px;
+    float: left;
+    border: none;
+}
+
+.grid-item--width4 {
+    width: 33.33%;
+}
+
+.grid-item--height5 {
+    height: 580px;
+}
+
+.grid-item--height6 {
+    height: 290px;
+}
+
+
+/* ---- hover effect ---- */
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    /*Changed from auto to 100%*/
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.grid-container:hover .image {
+    opacity: 0.3;
+}
+
+.grid-container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
