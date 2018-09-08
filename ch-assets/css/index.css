@@ -136,81 +136,49 @@ div.destinations-border {
 }
 
 /* -- Masonry Grid -- */
-/* ---- grid ---- */
-
-.grid {
-    max-width: 1200px;
+div.masonry-grid > div {
+    padding: 0;
 }
-
-
-/* clearfix */
-
-.grid:after {
-    content: '';
-    display: block;
-    clear: both;
+.container-wrapper {
+    position: relative;
+    width: 100%;
 }
-
-
-/* ---- grid-item ---- */
-
-.grid-item {
-    width: 20%;
-}
-
-.grid-item {
-    height: 120px;
-    float: left;
-    border: none;
-}
-
-.grid-item--width4 {
-    width: 33.33%;
-}
-
-.grid-item--height5 {
-    height: 580px;
-}
-
-.grid-item--height6 {
-    height: 290px;
-}
-
-
-/* ---- hover effect ---- */
 
 .image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    /*Changed from auto to 100%*/
-    transition: .5s ease;
-    backface-visibility: hidden;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
 .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.grid-container:hover .image {
-    opacity: 0.3;
+.container-wrapper:hover .image {
+  opacity: 0.3;
 }
 
-.grid-container:hover .middle {
-    opacity: 1;
+.container-wrapper:hover .middle {
+  opacity: 1;
 }
 
 .text {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+  color: #000;
+  font-size: 10vw;
+}
+.text > a {
+    color: #000;
+}
+.text > img.opacity-image {
+    width: 26vw;
 }
