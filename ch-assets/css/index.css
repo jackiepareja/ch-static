@@ -2,19 +2,23 @@
   All and General Styles for Index
 ======================================*/
 h4.featured-tours-header,
-h4.destinations-header {
+h4.destinations-header,
+h4.brochures-header {
     font-weight: 700;
     color: #E30303;
 }
-h6.view-all-destinations {
+h6.view-all-destinations,
+h6.view-all-brochures {
     text-align: right;
     color: #096D67;
 }
-h6.view-all-destinations > i.fas.fa-eye {
+h6.view-all-destinations > i.fas.fa-eye
+h6.view-all-destinations > i.fal.fa-atlas{
     color: #096D67;
 }
 div.featuredTours-border,
-div.destinations-border {
+div.destinations-border,
+div.brochures-border {
     height: 3px;
     background-color: #8DC63F;
     position: relative;
@@ -134,7 +138,9 @@ section#destinations > p.subtext {
 div.destinations-border {
     left: 1em;
 }
-
+div.masonry-grid {
+    margin: 0 auto 3rem;
+}
 /* -- Masonry Grid -- */
 div.masonry-grid > div {
     padding: 0;
@@ -192,4 +198,97 @@ h1.opacity-text {
     position: relative;
     top: 5rem;
     font-size: 24px;
+}
+div.divBrowseVideos {
+    background-color: #8DC63F;
+    padding: .5rem 0;
+    width: 98%;
+    margin: 0 0 0 4px;
+}
+div.divBrowseVideos > a.browseVideos {
+    padding: 0 0 0 15rem;
+    color: #000;
+}
+
+/*======================================
+  Available Brochures
+======================================*/
+section#brochures > div.brochures-col-header {
+    margin: 0;
+}
+div.brochures-col-header > div {
+    padding: 0;
+}
+section#brochures > div.brochure-outer-grid {
+    margin: 3rem auto 6rem;
+}
+div.brochure-col > img {
+    width: 90%;
+}
+div#carouselBrochureIndicators > ol {
+    position: relative;
+    top: 21rem;
+}
+div#carouselBrochureIndicators.carousel.slide > ol.carousel-indicators > li {
+    background-color: #FFF;
+    border: .5px solid #EDAE49;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+}
+div#carouselBrochureIndicators.carousel.slide > ol.carousel-indicators > li.active {
+    background-color: #EDAE49;
+    border: .5px solid #EDAE49;
+}
+
+/*======================================
+  Yelp API
+======================================*/
+section#yelpMap {
+    margin-bottom: 3rem;
+}
+section#yelpMap > div.div-yelp-header {
+    text-align: center;
+}
+section#yelpMap > div > h4.yelp-header {
+    color: #E30303;
+    font-weight: 600;
+    font-family: Tahoma, Helvetica, Arial;
+}
+div.searchForm > form {
+    text-align: center;
+    background-color: #E30303;
+    padding: .5rem;
+    width: 95%;
+    margin: auto;
+}
+label.yelpLabel {
+    color: #FFF;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+input.yelpInput {
+    height: 27px;
+    width: 65%;
+    border: none;
+    border-radius: 3px;
+    padding: 0 4px;
+}
+button#yelpSearch {
+    background-color: #8DC63F;
+    border: none;
+    border-radius: 3px;
+    width: 50%;
+    height: 28px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+#googleMap {
+    text-align: center;
+}
+#googleMap > img {
+    width: 95.5%;
+    height: 500px;
 }

@@ -765,7 +765,9 @@
                 <h4 class="destinations-header">Destinations</h4>
             </div>
             <div class="col-lg-6">
-                <h6 class="view-all-destinations"><i class="fas fa-eye"></i> View All Destinations</h6>
+                <a href="#">
+                    <h6 class="view-all-destinations"><i class="fas fa-eye"></i> View All Destinations</h6>
+                </a>
             </div>
             <div class="destinations-border"></div>
         </div>
@@ -831,8 +833,111 @@
     </section>
     <!-- end destinations -->
     <!-- AVAILABLE BROCHURES -->
+    <section id="brochures">
+        <div class="row container-fluid brochures-col-header">
+            <div class="col-lg-6">
+                <h4 class="brochures-header">Available Brochures</h4>
+            </div>
+            <div class="col-lg-6">
+                <a href="#">
+                    <h6 class="view-all-brochures"><i class="fal fa-atlas"></i> View All Brochures</h6>
+                </a>
+            </div>
+            <div class="brochures-border"></div>
+            <!--            <p class="subtext"></p>-->
+        </div> <!-- end of header container -->
+
+        <div class="row container brochure-outer-grid">
+            <div id="carouselBrochureIndicators" class="carousel slide" data-pause="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselBrochureIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselBrochureIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselBrochureIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row container brochure-grid">
+                            <div class="col-lg-3 brochure-col">
+                                <img src="ch-assets/img/brochures/brochure01.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3 brochure-col">
+                                <img src="ch-assets/img/brochures/brochure02.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3 brochure-col">
+                                <img src="ch-assets/img/brochures/brochure03.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3 brochure-col">
+                                <img src="ch-assets/img/brochures/brochure03.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row container brochure-grid">
+                            <div class="col-lg-3 brochure-col">
+                                <img src="ch-assets/img/brochures/brochure01.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3 brochure-col">
+                                <img src="ch-assets/img/brochures/brochure02.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3 brochure-col">
+                                <img src="ch-assets/img/brochures/brochure03.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3 brochure-col">
+                                <img src="ch-assets/img/brochures/brochure03.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row container brochure-grid">
+                            <div class="col-lg-3 brochure-col">
+                                <img src="ch-assets/img/brochures/brochure01.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3 brochure-col">
+                                <img src="ch-assets/img/brochures/brochure02.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3 brochure-col">
+                                <img src="ch-assets/img/brochures/brochure03.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3 brochure-col">
+                                <img src="ch-assets/img/brochures/brochure03.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- end available brochures -->
     <!-- YELP MAP -->
+    <section id="yelpMap">
+        <div class="div-yelp-header">
+            <h4 class="yelp-header">Search for a Local Agent Near You!</h4>
+        </div>
+        <div class="searchForm">
+            <form action="post">
+                <div class="row container-fluid yelpForm">
+                    <div class="col-lg-3">
+                        <label class="yelpLabel" for="city">City</label>
+                        <input class="yelpInput" type="text" name="city" />
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="yelpLabel" for="state">State</label>
+                        <input class="yelpInput" type="text" name="state" />
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="yelpLabel" for="zipCode">Zip Code</label>
+                        <input class="yelpInput" type="text" name="zipCode" />
+                    </div>
+                    <div class="col-lg-3">
+                        <button id="yelpSearch">Search</button>
+                    </div>
+                </div>
+            </form>
+            <div id="googleMap">
+                <img src="ch-assets/img/yelp-placeholder.jpg" alt="">
+            </div>
+        </div>
+    </section>
     <!-- end yelp map -->
     <!-- FOOTER -->
     <footer id="footer">
