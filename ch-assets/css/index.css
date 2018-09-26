@@ -47,7 +47,7 @@ div.featured-card-text{
 p.feature-text-1,
 p.feature-text-2,
 p.feature-text-3 {
-    margin-bottom: .4em;
+    margin-bottom: .35rem;
 }
 
 /*======================================
@@ -71,14 +71,14 @@ button.guaranteed-tab {
     color: #fff;
     border-radius: 10px 20px 0 0;
     width: 50%;
-    height: 3em;
+    height: 3rem;
 }
 button.hot-tab {
     background-color: #096D67;
     color: #fff;
     border-radius: 10px 20px 0 0;
     width: 50%;
-    height: 3em;
+    height: 3rem;
 }
 .all-tabs button:hover {
 }
@@ -99,7 +99,7 @@ button.hot-tab {
 /* --Carousel Guaranteed Departure Dates */
 div#carouselFeaturedTabIndicators > ol {
     position: relative;
-    top: 50em;
+    top: 50rem;
 }
 div#carouselFeaturedTabIndicators.carousel.slide > ol.carousel-indicators > li {
     background-color: #FFF;
@@ -165,11 +165,12 @@ div.masonry-grid > div {
 }
 
 .container-wrapper:hover .image {
-  opacity: 0.3;
+    opacity: 0.3;
 }
 
 .container-wrapper:hover .middle {
-  opacity: 1;
+    opacity: 1;
+    cursor: pointer;
 }
 
 .text {
@@ -180,5 +181,15 @@ div.masonry-grid > div {
     color: #000;
 }
 .text > img.opacity-image {
-    width: 26vw;
+    width: 23rem;
+    position: relative;
+    bottom: 0;
+}
+h1.opacity-text {
+    color: #FFF;
+    text-transform: uppercase;
+    text-shadow: 2px 1px #000;
+    position: relative;
+    top: 5rem;
+    font-size: 24px;
 }
